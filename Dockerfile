@@ -10,6 +10,6 @@ RUN pnpm install
 
 COPY . .
 
-EXPOSE 2000
+EXPOSE 8080
 
 CMD ["pnpm", "start"]

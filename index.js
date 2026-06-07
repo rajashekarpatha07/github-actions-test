@@ -9,6 +9,6 @@ app.get("/", async (req, res) => {
   });
 });
 
-app.listen(2000, ()=>{
-    console.log("server is listing on post 2000")
+app.listen(8080, ()=>{
+    console.log("server is listing on post 8080")
 })
