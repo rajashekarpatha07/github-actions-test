@@ -2,7 +2,6 @@ import express from "express";
 
 const app = express();
 const PORT = process.env.PORT || 8080;
-const HOST = "0.0.0.0";
 
 app.use(express.json());
 
@@ -18,6 +17,6 @@ app.get("/health", (req, res) => {
   });
 });
 
-app.listen(PORT, HOST, () => {
-  console.log(`server is listening on http://${HOST}:${PORT}`);
+app.listen(PORT, () => {
+  console.log(`server is listening on http://${"localhost"}:${PORT}`);
 });
