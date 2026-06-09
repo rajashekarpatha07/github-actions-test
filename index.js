@@ -17,6 +17,6 @@ app.get("/health", (req, res) => {
   });
 });
 
-app.listen(PORT, () => {
-  console.log(`server is listening on http://${"localhost"}:${PORT}`);
+app.listen(PORT, "0.0.0.0", () => {
+  console.log(`server is listening on http://localhost:${PORT}`);
 });
