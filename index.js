@@ -7,7 +7,7 @@ app.use(express.json());
 
 app.get("/", async (req, res) => {
   res.json({
-    msg: "hello from the server",
+    msg: "hello from the server test 1",
   });
 });
 
